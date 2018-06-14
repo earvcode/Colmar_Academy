@@ -1,0 +1,45 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* To offset for fixed header. */
+}
+
+.container {
+  margin: 24px 32px;
+}
+
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+
+
+
+
+/* Banner Section */
+
+
+
+/* Info Section */
+
+/* Course Section */
+
+/* Exhibit Section */
+
+
+
+/* Footer */
+

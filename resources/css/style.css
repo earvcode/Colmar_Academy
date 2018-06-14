@@ -5,6 +5,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #fff;
+  line-height: 1.4;
+}
+
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
@@ -20,13 +25,59 @@ html {
 header {
   position: fixed;
   z-index: 100;
+  border-bottom: solid 1px #DAD8D1;
   width: 100%;
-  border-bottom: solid 1px #c6c1c1;
-  background-color: white;
+  height: 64px;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav li {
+  padding-right: 16px;
+}
 
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  height: 32px;
+}
+
+.title-1 {
+  font-weight: bold;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: space-around;
+
+  }
+}
 
 
 /* Banner Section */

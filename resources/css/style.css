@@ -8,16 +8,27 @@ html {
 body {
   background-color: #fff;
   line-height: 1.4;
+  color: #2C2B30;
 }
 
 .main-content {
   position: relative;
-  top: 4.5rem; /* To offset for fixed header. */
+  top: 4.75rem; /* To offset for fixed header. */
 }
+
 .container {
   padding: 32px 24px;
 }
 
+@media only screen and (max-width: 540px) {
+  .main-content {
+    top: 2rem;
+
+  }
+  .container {
+    padding: 32px 16px;
+  }
+}
 
 /* Header */
 
@@ -43,6 +54,7 @@ nav li {
   justify-content: flex-start;
   height: 32px;
   font-size: 1.5rem;
+  color: #2C2B30;
 }
 
 .logo img {
@@ -66,7 +78,7 @@ nav li {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 540px) {
   .desktop-menu {
     display: none;
   }
@@ -77,6 +89,8 @@ nav li {
 
   .menu {
     width: 100%;
+    height: 64px;
+    padding: 3px 3px;
   }
 
   .mobile-menu {
@@ -85,7 +99,6 @@ nav li {
 
   }
 }
-
 
 /* Banner Section */
 .banner {
@@ -103,20 +116,46 @@ nav li {
   align-items: center;
 }
 .main-img {
-  background-image: url('../images/banner.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 60%;
   height: 25rem;
   margin-right: 24px;
 
 }
-
+.headline {
+  font-weight: 400;
+  width: 40%;
+}
+.headline h1, h4{
+  padding-bottom: 10px;
+}
 button {
-  padding: 8px;
+  margin: auto 0;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  background-color: #566478;
+  color: #DAD8D1;
+  font-weight: 400;
 }
 
+@media only screen and (max-width: 540px) {
+  .enroll {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .container {
+    padding-top: 0px;
+  }
+  .main-img {
+    width: auto;
+
+  }
+
+  .headline {
+    width: auto;
+  }
+}
 
 /* Info Section */
 .info {

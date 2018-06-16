@@ -1,7 +1,7 @@
 /* Universal Styles */
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
 
@@ -20,6 +20,49 @@ body {
   padding: 32px 24px;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+
+}
+
+.aside {
+  width: 40%;
+}
+
+.aside img {
+  height: auto;
+  width: 35%;
+  padding: 16px 16px;
+}
+.aside figcaption {
+  width: 65%;
+}
+.title {
+  padding: 32px;
+}
+
+.fig-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
 @media only screen and (max-width: 540px) {
   .main-content {
     top: 2rem;
@@ -37,18 +80,23 @@ header {
   z-index: 100;
   width: 100%;
   height: 64px;
+  background-color: #fff;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Libre Baskerville', serif;
 }
 
 nav li {
   padding-right: 16px;
 }
 
+nav li a:hover {
+  color: #3366BB;
+}
 .logo {
   display: flex;
   justify-content: flex-start;
@@ -61,12 +109,12 @@ nav li {
   height: 2.5rem;
 }
 
-.title-1 {
-  font-weight: 400;
+.compname-1 {
+  font-weight: 900;
 }
 
-.title-2 {
-  font-weight: 100;
+.compname-2 {
+  font-weight: 300;
 }
 .desktop-menu {
   display: flex;
@@ -96,7 +144,8 @@ nav li {
   .mobile-menu {
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
+    padding: 8px;
   }
 }
 
@@ -107,9 +156,9 @@ nav li {
 
 }
 
-.banner h1 {
+/* .banner h1 {
   font-size: 2.5rem;
-}
+} */
 .enroll {
   display: flex;
   justify-content: space-between;
@@ -122,20 +171,23 @@ nav li {
 
 }
 .headline {
-  font-weight: 400;
   width: 40%;
 }
-.headline h1, h4{
-  padding-bottom: 10px;
+.headline h1, h3{
+  padding-bottom: 8px;
 }
 button {
   margin: auto 0;
-  width: 100%;
+  width: 80%;
   height: 2.5rem;
   font-size: 1.25rem;
   background-color: #566478;
   color: #DAD8D1;
   font-weight: 400;
+}
+
+button:hover {
+  background-color: #AC6404;
 }
 
 @media only screen and (max-width: 540px) {
@@ -158,8 +210,50 @@ button {
 }
 
 /* Info Section */
-.info {
-  border: 1px solid black;
+.desktop-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-info {
+  display: none;
+}
+
+.info-sect-1 {
+  width: 60%;
+  height: auto;
+  padding-right: 24px;
+}
+
+.info-sect-1 img {
+  width: 100%;
+  height: auto;
+}
+
+.info-sect-1 h2 {
+  padding-bottom: 24px;
+}
+figure {
+  border: 1px solid #DAD8D1;
+  margin-bottom: 0.5rem;
+}
+
+figcaption > * {
+  padding-bottom: 8px;
+}
+
+.info-sect-2 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-sect-2 a {
+  color: #3366BB;
+}
+blockquote {
+  padding-bottom: 8px;
 }
 /* Course Section */
 

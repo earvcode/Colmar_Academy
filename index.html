@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900|Libre+Baskerville:400,400i,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./resources/images/ic-logo.png">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">																						
   <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/style.css">
@@ -15,22 +14,22 @@
     <nav class="container">
       <div class="logo">
         <img src="./resources/images/ic-logo-color.svg" alt="Colmar Academy Logo">
-        <span class="title-1">COLMAR</span><span class="title-2">ACADEMY</span>
+        <span class="compname-1">COLMAR</span><span class="compname-2">ACADEMY</span>
       </div>
       <div class="menu">
         <ul class="desktop-menu" role="presentation">
-          <li><a href="#banner"></a>Enroll</li>
-          <li><a href="#info"></a>Info</li>
-          <li><a href="#courses"></a>Courses</li>
-          <li><a href="#exhibit"></a>Sign In</li>
+          <li><a href="#enroll">Enroll</a></li>
+          <li><a href="#info">Info</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#exhibit">Sign In</a></li>
         </ul>
       
         <ul class="mobile-menu" role="presentation">
           <a href="./index.html"><img src="./resources/images/ic-logo-color.svg" alt="Colmar Academy Logo"></a>
-          <li><i class="fa fa-edit fa-lg"></i></li>
-          <li><i class="fa fa-info fa-lg"></i></li>
-          <li><i class="fa fa-desktop fa-lg"></i></li>
-          <li><i class="fa fa-user fa-lg"></i></li>
+          <li><a href="#enroll" class="fa fa-edit fa-lg"></a></li>
+          <li><a href="#info" class="fa fa-info fa-lg"></a></li>
+          <li><a href="#courses" class="fa fa-desktop fa-lg"></a></li>
+          <li><a href="#exhibit" class="fa fa-user fa-lg"></a></li>
         </ul>
        </div>
     </nav>
@@ -39,21 +38,56 @@
 
   <!-- Main Content -->
   <div class="main-content">
+
   <!-- Banner Container -->
     <div class="banner">
       <div id="enroll" class="enroll container"> 
-        <img class= "main-img" src="./resources/images/banner.jpg" alt="Banner Image">
+        <img src="./resources/images/banner.jpg" alt="Banner Image" class= "main-img">
         <div class="headline">
           <h1>Learn something <br>new everyday</h1>
-          <h4>Colmar Academy specializes in providing a variety of training courses for business professionals.</h4>
-          <button>Start Here</button>
+          <h3>Colmar Academy provides a variety of training courses for business professionals.</h3>
+          <button>Start here</button>
         </div>
       </div>
     </div>
+
   <!-- Info Container -->
-  
-    <div class="info container">
-      <h1>INFORMATION SECTION</h1>
+    <div id="info" class="desktop-info container">
+      <div class="info-sect-1">
+        <img src="./resources/images/information-main.jpg" alt="" class="main-img info-img">
+        <h2>Preparing students for a rewarding career</h2>
+        <blockquote><p>"It has been a truly invaluable learning experience for me. I want you to know that I have learnt so much from all of your constructive input and guidance throughout each lesson of the course. Colmar Academy helped me to understand my strengths and weaknesses."</p></blockquote>
+        <p>-Emanuel, Sr Strategist at Hiring.com</p>
+      </div>
+      <div class="info-sect-2 aside">
+        <figure class="fig-info">
+          <img src="./resources/images/information-orientation.jpg" alt="">
+           <figcaption>
+             <h3>Orientation date</h3>
+             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+             <a href="#">Read more</a>
+           </figcaption>
+        </figure>
+        <figure class="fig-info">
+          <img src="./resources/images/information-campus.jpg" alt="">
+           <figcaption>
+             <h3>Our campus</h3>
+             <p>Find which campus is close by you</p>
+             <a href="#">Read more</a>
+           </figcaption>
+        </figure>
+        <figure class="fig-info">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="">
+          <figcaption>
+            <h3>Our guest lecture</h3>
+            <p>Join a keynote with Oliver Slack about music</p>
+            <a href="#">Read more</a> 
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="mobile-info">
+
     </div>
 
     <!-- Footer -->

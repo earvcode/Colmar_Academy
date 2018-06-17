@@ -9,6 +9,7 @@ body {
   background-color: #fff;
   line-height: 1.4;
   color: #2C2B30;
+
 }
 
 .main-content {
@@ -19,7 +20,7 @@ body {
 .container {
   padding: 32px 24px;
 }
-
+ 
 h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -138,44 +139,43 @@ nav li a:hover {
   .menu {
     width: 100%;
     height: 64px;
-    padding: 3px 3px;
   }
 
   .mobile-menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8px;
   }
 }
 
 /* Banner Section */
+
 .banner {
   background-color: #DAD8D1; 
   width: 100%;
 
 }
-
-/* .banner h1 {
-  font-size: 2.5rem;
-} */
 .enroll {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .main-img {
   width: 60%;
   height: 25rem;
   margin-right: 24px;
 
 }
+
 .headline {
   width: 40%;
 }
+
 .headline h1, h3{
   padding-bottom: 8px;
 }
+
 button {
   margin: auto 0;
   width: 80%;
@@ -196,7 +196,7 @@ button:hover {
     flex-flow: column wrap;
     align-items: center;
   }
-  .container {
+  nav .container {
     padding-top: 0px;
   }
   .main-img {
@@ -215,6 +215,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .mobile-info {
   display: none;
 }
@@ -233,7 +234,7 @@ button:hover {
 .info-sect-1 h2 {
   padding-bottom: 24px;
 }
-figure {
+.desktop-info figure {
   border: 1px solid #DAD8D1;
   margin-bottom: 0.5rem;
 }
@@ -254,6 +255,29 @@ figcaption > * {
 }
 blockquote {
   padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 540px) {
+  .desktop-info {
+    display: none;
+  }
+
+  .mobile-info {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+  }
+  .fig-info-mobile img{
+    width: auto;
+
+  }
+  figure {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
 }
 /* Course Section */
 

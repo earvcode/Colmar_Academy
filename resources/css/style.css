@@ -151,7 +151,7 @@ nav li a:hover {
 /* Banner Section */
 
 .banner {
-  background-color: #DAD8D1; 
+  background-color: rgba(218, 216, 209, 0.75); 
   width: 100%;
 
 }
@@ -196,12 +196,12 @@ button:hover {
     flex-flow: column wrap;
     align-items: center;
   }
+
   nav .container {
     padding-top: 0px;
   }
   .main-img {
     width: auto;
-
   }
 
   .headline {
@@ -216,6 +216,9 @@ button:hover {
   align-items: center;
 }
 
+.desktop-info a, .mobile-info a {
+  color: #3366BB;
+}
 .mobile-info {
   display: none;
 }
@@ -250,9 +253,7 @@ figcaption > * {
   justify-content: space-between;
 }
 
-.info-sect-2 a {
-  color: #3366BB;
-}
+
 blockquote {
   padding-bottom: 8px;
 }
@@ -268,14 +269,19 @@ blockquote {
     align-items: center;
 
   }
-  .fig-info-mobile img{
-    width: auto;
 
-  }
   figure {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    width: 90%;
+    height: 45%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  figcaption {
+    padding-left: 16px;
+    padding-bottom: 64px;
   }
 
 }

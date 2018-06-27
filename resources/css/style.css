@@ -20,7 +20,7 @@ body {
 .flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 } 
 
 .img-container {
@@ -78,7 +78,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 1rem;
-  align-items: flex-start;
 }
 
 .aside img {
@@ -93,16 +92,22 @@ p {
   padding: 2rem;
   text-align: center;
 }
-
+.information {
+  padding: 0 1.5rem;
+}
 .fig-info {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+figure:hover {
+  background-color: rgb(86, 100, 120, 0.25);
+}
 @media only screen and (max-width: 780px) {
   .main-content {
     top: 2rem;
+    overflow: hidden;
   }
 
 }
@@ -188,8 +193,8 @@ nav li a:hover {
   background-color: rgba(218, 216, 209, 0.75); 
 }
 
-.banner h1, h3{
-  padding-bottom: 0.5rem;
+.banner h1, .banner h3{
+  padding: 2.5rem 0;
 }
 
 button {
@@ -197,7 +202,7 @@ button {
   width: 80%;
   height: 2.5rem;
   font-size: 1.25rem;
-  background-color: #566478;
+  background-color: rgb(86, 100, 120);
   color: #DAD8D1;
   font-weight: 400;
 }
@@ -220,6 +225,7 @@ button:hover {
     width: 90%;
     padding: 2rem 1rem;
   }
+  
   .headline h1 {
     padding-bottom: 2rem;
   }
@@ -237,8 +243,8 @@ button:hover {
   display: none;
 }
 
-.information  {
-  padding: 0 1.5rem;
+.information  h2 {
+  padding-bottom: 1.5rem;
 }
 
 .desktop-info figure {
@@ -308,7 +314,9 @@ blockquote {
   max-width: 100%;
   display: block;
 }
-
+.course-container h3{
+  padding-left: 0.5rem;
+}
 .course-container figcaption {
   padding: 1rem 1rem 1.5rem 1rem;
   background-color: #fff;
@@ -359,9 +367,44 @@ video {
   padding: 2rem 1.5rem;
 }
 
+.information h3 {
+  padding-bottom: 0.5rem;
+}
 
+@media only screen and (max-width: 780px) {
+
+  .information {
+    display: none;
+  }
+
+  .thesis-content .primary-info {
+    width: 100%;
+  }
+  .thesis-content .aside {
+    display: none;
+  }
+
+  .video-container {
+    padding: 0;
+
+  }
+}
 /* Footer */
-footer {
+.footer {
   background-color: rgba(218, 216, 209, 0.75);
   border-top: 1px solid #fff;
+  padding: 1rem 1.5rem;
+}
+
+.footer-info span {
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer-info {
+    display: none;
+  }
 }

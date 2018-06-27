@@ -8,7 +8,7 @@ html {
 body {
   background-color: #fff;
   line-height: 1.4;
-  color: #2C2B30;
+  color: #2C2B30
 
 }
 
@@ -59,8 +59,26 @@ p {
 
 }
 
+.primary-info {
+  width: 60%;
+  height: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.primary-info img {
+  height: auto;
+}
+
 .aside {
   width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  align-items: flex-start;
 }
 
 .aside img {
@@ -99,7 +117,9 @@ header {
   background-color: #fff;
   padding: 0.5rem 1.5rem;
 }
-
+.menu {
+  padding: 0.5rem 0.5rem;
+}
 nav {
   font-family: 'Libre Baskerville', serif;
 }
@@ -210,29 +230,11 @@ button:hover {
 }
 
 /* Info Section */
-.desktop-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .desktop-info a, .mobile-info a {
   color: #3366BB;
 }
 .mobile-info {
   display: none;
-}
-
-.info-sect-1 {
-  width: 60%;
-  height: auto;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.info-sect-1 img {
-  height: auto;
 }
 
 .information  {
@@ -247,14 +249,6 @@ button:hover {
 .desktop-info figcaption > * {
   padding-bottom: 0.5rem;
 }
-
-.info-sect-2 {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 
 blockquote {
   padding-bottom: 0.5rem;
@@ -300,18 +294,26 @@ blockquote {
   align-items: center; 
 }
 
-.row figure {
+.course-container figure {
   margin: 2rem 2rem;
   border: 1px solid #fff;
+  overflow: hidden;
+  width: 50%;
+  height: 22rem;
+
 }
 
-.row figure img {
+.course-container figure img {
   height: auto;
   max-width: 100%;
+  display: block;
 }
 
-.row figcaption {
+.course-container figcaption {
   padding: 1rem 1rem 1.5rem 1rem;
+  background-color: #fff;
+  height: 100%;
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -328,26 +330,38 @@ blockquote {
     flex-flow: column wrap;
     align-items: center;  
   }
-  .row {
+  .course-row {
     width: 90%;
   }
-  .row figure {
+  .course-row figure {
     margin: 0 0 0.5rem 0;
     width: 100%;
+    height: auto;
   }
 
-  .row figure img {
+  .course-row figure img {
     display: none;
   }
 
-  .row figcaption h4 {
+  .course-row figcaption h4 {
     display: none;
   }
 
 }
 /* Exhibit Section */
-
+video {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.video-container {
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+}
 
 
 /* Footer */
-
+footer {
+  background-color: rgba(218, 216, 209, 0.75);
+  border-top: 1px solid #fff;
+}

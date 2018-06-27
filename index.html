@@ -11,13 +11,13 @@
 <body>
   <!-- Header -->
   <header>
-    <nav class="container">
+    <nav class="container flex">
       <div class="logo">
         <img src="./resources/images/ic-logo-color.svg" alt="Colmar Academy Logo">
         <span class="compname-1">COLMAR</span><span class="compname-2">ACADEMY</span>
       </div>
       <div class="menu">
-        <ul class="desktop-menu" role="presentation">
+        <ul class="desktop-menu flex" role="presentation">
           <li><a href="#enroll">Enroll</a></li>
           <li><a href="#info">Info</a></li>
           <li><a href="#courses">Courses</a></li>
@@ -40,29 +40,33 @@
   <div class="main-content">
 
   <!-- Banner Container -->
-    <div class="banner">
-      <div id="enroll" class="enroll container"> 
-        <img src="./resources/images/banner.jpg" alt="Banner Image" class= "main-img">
-        <div class="headline">
-          <h1>Learn something <br>new everyday</h1>
-          <h3>Colmar Academy provides a variety of training courses for business professionals.</h3>
-          <button>Start here</button>
-        </div>
-      </div>
+    <div class="banner flex">
+          <div class="img-container">
+            <img src="./resources/images/banner.jpg" alt="Banner Image" >
+          </div>
+          <div class="headline aside">
+            <h1>Learn something <br>new everyday</h1>
+            <h3>Colmar Academy provides a variety of training courses for business professionals.</h3>
+            <button>Start here</button>
+          </div>
     </div>
 
   <!-- Info Container -->
     <div id="info" class="desktop-info container">
       <div class="info-sect-1">
-        <img src="./resources/images/information-main.jpg" alt="Main Image" class="main-img">
-        <h2>Preparing students for a rewarding career</h2>
-        <blockquote><p>"It has been a truly invaluable learning experience for me. I want you to know that I have learnt so much from all of your constructive input and guidance throughout each lesson of the course. Colmar Academy helped me to understand my strengths and weaknesses."</p></blockquote>
-        <p>-Emanuel, Sr Strategist at Hiring.com</p>
+        <div class="img-container">
+          <img src="./resources/images/information-main.jpg" alt="Main Image" >
+        </div>
+        <div class="information">
+          <h2>Preparing students for a rewarding career</h2>
+          <blockquote><p>"It has been a truly invaluable learning experience for me. I want you to know that I have learnt so much from all of your constructive input and guidance throughout each lesson of the course. Colmar Academy helped me to understand my strengths and weaknesses."</p></blockquote>
+          <p>-Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
       </div>
       <div class="info-sect-2 aside">
         <figure class="fig-info">
-          <img src="./resources/images/information-orientation.jpg" alt="Orientation Image">
-           <figcaption>
+            <img src="./resources/images/information-orientation.jpg" alt="Orientation Image">
+            <figcaption>
              <h3>Orientation date</h3>
              <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
              <a href="#">Read more</a>
@@ -114,7 +118,65 @@
     </div>
 
     <!-- Courses Container -->
-
+    <div id="courses" class="courses">
+      <div class="title">
+        <h2>Start Learning</h2>
+      </div>
+      <div class="course-container">
+        <div class="row flex">
+          <figure>
+            <img src="./resources/images/course-software.jpg" alt="Software Course">
+            <figcaption>
+              <h3>Software Engineering</h3>
+              <h4>COURSES</h4>
+              <h4>Web Development, Mobile Development, iOT, APIs</h4>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/course-computer-art.jpg" alt="Computer art course">
+            <figcaption>
+              <h3>Computer Art</h3>
+              <h4>COURSES</h4>
+              <h4>Imaging &AMP; Design, Web Design, Motion Graphics &AMP; Visual Effects, Computer Animation</h4>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/course-design.jpg" alt="Design course">
+            <figcaption>
+              <h3>Design</h3>
+              <h4>COURSES</h4>
+              <h4>User Experience Design, User Research, Visual Design</h4>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="row flex">
+          <figure>
+            <img src="./resources/images/course-data.jpg" alt="Data course">
+            <figcaption>
+              <h3>Data</h3>
+              <h4>COURSES</h4>
+              <h4>Data Science, Big Data, SQL, Data Visualization</h4>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/course-business.jpg" alt="Business course">
+            <figcaption>
+              <h3>Business</h3>
+              <h4>COURSES</h4>
+              <h4>Product Development, Business Development, Startup</h4>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./resources/images/course-marketing.jpg" alt="Marketing course">
+            <figcaption>
+              <h3>Marketing</h3>
+              <h4>COURSES</h4>
+              <h4>Analytics, Content Marketing, Mobile Marketing</h4>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
     <!-- Exhibit Container -->
 
 
